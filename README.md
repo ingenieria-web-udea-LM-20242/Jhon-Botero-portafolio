@@ -1,40 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portafolio de Jhon Botero
 
-## Getting Started
+Bienvenido a mi portafolio, donde puedes explorar mis proyectos y habilidades en desarrollo web. Este portafolio está diseñado para mostrar mi experiencia en tecnologías como React, Node.js, Java con Spring Boot, Angular, y más.
 
-First, run the development server:
+## Despliegue
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Puedes ver el portafolio en el siguiente enlace:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[https://jhon-botero-portafolio.vercel.app/](https://jhon-botero-portafolio.vercel.app/) 
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Este es un proyecto de [Next.js](https://nextjs.org/) creado con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).  
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Descripción del Diseño Atómico (Atomic Design)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Este proyecto sigue la metodología **Atomic Design**, que divide la interfaz de usuario en componentes específicos según su rol y reutilización. Esta metodología permite mantener un sistema de diseño escalable y consistente organizando los componentes en las siguientes categorías:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### **Estructura de Atomic Design**
 
-## Learn More
+1. **Átomos**:  
+   - Son los componentes más pequeños y reutilizables, como botones, íconos o campos de entrada.  
+   - **Ubicación:** `components/atoms/`  
 
-To learn more about Next.js, take a look at the following resources:
+2. **Moléculas**:  
+   - Son combinaciones de átomos que trabajan juntos, como un campo de formulario con una etiqueta y un botón.  
+   - **Ubicación:** `components/molecules/`  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Organismos**:  
+   - Son secciones más complejas que agrupan moléculas y átomos, como una barra de navegación o una tarjeta de perfil.  
+   - **Ubicación:** `components/organisms/`  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. **Páginas (Pages)**:  
+   - Representan las vistas completas de la aplicación utilizando plantillas y componentes previamente definidos.  
+   - **Ubicación:** `pages/`  
 
-## Deploy on Vercel
+Esta estructura facilita el mantenimiento del código, permite la reutilización de componentes y asegura la coherencia en toda la aplicación.  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### utils/const.ts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este archivo contiene varias estructuras de datos que se utilizan para llenar información en la aplicación.
